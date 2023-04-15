@@ -13,7 +13,7 @@ class Bank(commands.Cog):
 		print('Bank has loaded')
 
 	#TODO: Interest system
-
+	# TODO: create time system
 	@commands.command()
 	async def bank(self, ctx, *args):
 		with open('data.json', 'r') as openfile:

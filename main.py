@@ -21,8 +21,8 @@ async def load():
 @bot.event
 async def on_command_error(ctx, error):
 	await ctx.send('tf?')
-
-
+	print(error)
+		  
 @bot.command()
 async def refresh(ctx):
 	count = 0

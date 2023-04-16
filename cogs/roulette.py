@@ -3,13 +3,7 @@ import random
 
 
 class Roulette(commands.Cog):
-	# min_num = 1
-	# max_num = 2
-	# num_of_rand_numbers = 5
-
-	# !yahtzee start
-	#
-
+	
 	def __init__(self, client):
 		self.client = client  # sets the client variable so we can use it in cogs
 

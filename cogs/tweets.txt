@@ -1,0 +1,5 @@
+#pulls tweet from twitter whenever andrew tate sends a tweet
+
+# import tweepy
+
+#TODO:consult Joe in case of twitter/discord violations

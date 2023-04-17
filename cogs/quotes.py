@@ -2,6 +2,7 @@ from discord.ext import commands
 import json
 import random
 
+
 class Quotes(commands.Cog):
 
 	def __init__(self, client):

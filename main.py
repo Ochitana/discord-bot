@@ -3,11 +3,13 @@ import discord
 from discord.ext import commands
 import os
 import time
+from flask import Flask
+from threading import Thread
 
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
-
+app = Flask('')
 allowlist = ['Ochitana', 'Eoj']
 
 
@@ -61,7 +63,6 @@ async def uptime(ctx):
 	else:
 		await ctx.send(
 		 'Time is the the enemy of the rich man. And you, are not a rich man.')
-
 
 
 #TODO: Figure out how to keep bot alive without paying money

@@ -17,3 +17,5 @@ class Tweets(commands.Cog):
 
 async def setup(bot):
 	await bot.add_cog(Tweets(bot))
+
+# TODO: make twitter admin dev account 

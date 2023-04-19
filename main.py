@@ -3,17 +3,17 @@ import discord
 from discord.ext import commands
 import os
 import time
-from flask import Flask
-from threading import Thread
 
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
-app = Flask('')
+
 allowlist = ['Ochitana', 'Eoj']
+start_time = time.time()
 
 
 async def load():
+	# Loads all cogs
 	count = 0
 	for f in os.listdir("./cogs"):
 		if f.endswith(".py"):
@@ -40,12 +40,6 @@ async def refresh(ctx):
 		await ctx.send(f'Weak. Only {count} cogs?')
 	else:
 		await ctx.send('no')
-
-
-@bot.event
-async def on_ready():
-	global start_time
-	start_time = time.time()
 
 
 @bot.command()

@@ -1,6 +1,7 @@
 {
-	"roulette": {"Eoj": 10, 
-		"Melnzi": 100},
-	"coinflip": {"Eoj": ["heads", 10],
-		"Melnzi": ["tails", 100]}
+    "roulette": {
+        "Eoj": 10,
+        "Melnzi": 100
+    },
+    "coinflip": {}
 }

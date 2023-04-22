@@ -2,7 +2,6 @@ from discord.ext import commands
 import json
 import random
 
-
 class coin_flip(commands.Cog):
 
 	def __init__(self, client):
@@ -15,11 +14,11 @@ class coin_flip(commands.Cog):
 	@commands.command()
 	async def flip(self, ctx, *args):
 		result = random.choice(['heads', 'tails'])
-		self.betExecute(result, ctx)
+		await self.betExecute(result, ctx)
 
 	@commands.command()
 	async def bet(self, ctx, *args):
-		self.addBet(ctx, args)
+		await self.addBet(ctx, args)
 
 #TODO make it interact with data.json to be able to make bets
 

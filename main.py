@@ -1,6 +1,7 @@
 import asyncio
 import discord
 from discord.ext import commands
+import keep_alive
 import os
 import time
 
@@ -62,5 +63,6 @@ async def uptime(ctx):
 #TODO: Figure out how to keep bot alive without paying money
 #upTimeRobot
 
+keep_alive.keep_alive()
 asyncio.run(load())
 bot.run(os.environ['TOKEN'])

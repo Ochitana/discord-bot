@@ -14,7 +14,7 @@ class Roulette(commands.Cog):
 
 	@commands.command()
 	async def roulette(self, ctx, *args):
-		with open('game-state.json', 'r') as openfile:
+		with open('game_state.json', 'r') as openfile:
 			gameStateDict = json.load(openfile)
 		print(gameStateDict)
 		# !roulette list

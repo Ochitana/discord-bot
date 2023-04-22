@@ -14,7 +14,7 @@ class Quotes(commands.Cog):
 
 	@commands.command()
 	async def quotes(self, ctx, *args):
-		with open('tate-quotes.json', 'r') as openfile:
+		with open('tate_quotes.json', 'r') as openfile:
 			tateDict = json.load(openfile)
 		tateList = tateDict['tate_quote']
 		# print(len(tateList))
